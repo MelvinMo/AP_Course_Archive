@@ -1,6 +1,6 @@
 # AP_Course_Archive
 
-##Programming Mini Projects
+## Programming Mini Projects
 This folder contains an extensive collection of over twenty meticulously crafted C++ codes, encompassing a wide range of topics and functionalities within the language. Each mini-project serves as an opportunity to delve into different aspects of C++, including object-oriented programming, data structures, algorithms, and more.
 
 ## Final Exam
