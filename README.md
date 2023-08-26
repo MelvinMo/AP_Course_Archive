@@ -1,5 +1,5 @@
 # AP_Course_Archive
-This repository contains the assignments and other works I completed during my first year of undergrad studies in an advanced programming course focused on learning C++.
+This repository contains the assignments and other works I completed during my first year of undergrad studies in the advanced programming course focused on learning C++.
 
 ## Programming Mini Projects
 This folder contains an extensive collection of over twenty meticulously crafted C++ codes, encompassing a wide range of topics and functionalities within the language. Each mini-project serves as an opportunity to delve into different aspects of C++, including object-oriented programming, data structures, algorithms, and more.
