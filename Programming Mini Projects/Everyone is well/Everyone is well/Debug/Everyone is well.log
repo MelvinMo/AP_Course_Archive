@@ -1,0 +1,14 @@
+﻿  Everyone is well_source code.cpp
+c:\users\win10\desktop\everyone is well\everyone is well\everyone is well_source code.cpp(50): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\win10\desktop\everyone is well\everyone is well\everyone is well_source code.cpp(51): warning C4244: 'initializing': conversion from 'float' to '__int64', possible loss of data
+c:\users\win10\desktop\everyone is well\everyone is well\everyone is well_source code.cpp(67): warning C4244: 'return': conversion from 'float' to '__int64', possible loss of data
+c:\users\win10\desktop\everyone is well\everyone is well\everyone is well_source code.cpp(71): warning C4244: 'return': conversion from 'float' to '__int64', possible loss of data
+c:\users\win10\desktop\everyone is well\everyone is well\everyone is well_source code.cpp(84): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\win10\desktop\everyone is well\everyone is well\everyone is well_source code.cpp(85): warning C4244: 'initializing': conversion from 'float' to '__int64', possible loss of data
+c:\users\win10\desktop\everyone is well\everyone is well\everyone is well_source code.cpp(100): warning C4244: 'return': conversion from 'float' to '__int64', possible loss of data
+c:\users\win10\desktop\everyone is well\everyone is well\everyone is well_source code.cpp(104): warning C4244: 'return': conversion from 'float' to '__int64', possible loss of data
+c:\users\win10\desktop\everyone is well\everyone is well\everyone is well_source code.cpp(118): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\win10\desktop\everyone is well\everyone is well\everyone is well_source code.cpp(119): warning C4244: 'initializing': conversion from 'float' to '__int64', possible loss of data
+c:\users\win10\desktop\everyone is well\everyone is well\everyone is well_source code.cpp(135): warning C4244: 'return': conversion from 'float' to '__int64', possible loss of data
+c:\users\win10\desktop\everyone is well\everyone is well\everyone is well_source code.cpp(139): warning C4244: 'return': conversion from 'float' to '__int64', possible loss of data
+  Everyone is well.vcxproj -> C:\Users\Win10\Desktop\Everyone is well\Debug\Everyone is well.exe

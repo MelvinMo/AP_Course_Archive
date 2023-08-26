@@ -1,0 +1,235 @@
+#pragma warning(disable : 4996)
+#include <stdio.h>
+#include <stdlib.h>
+#include <string>
+#include <iostream>
+
+using namespace std;
+
+class A
+{
+public:
+	A()
+	{
+		callA = 0;
+	}
+private:
+	int callA;
+	void inc() 
+	{
+		callA++;
+	}
+protected:
+	void func(int & a)
+	{
+		a = a * 2;
+		inc();
+	}
+public:
+	int getA() 
+	{
+		return callA;
+	}
+};
+
+class B
+{
+public:
+	B()
+	{
+		callB = 0;
+	}
+private:
+	int callB;
+	void inc()
+	{
+		callB++;
+	}
+protected:
+	void func(int & a)
+	{
+		a = a * 3;
+		inc();
+	}
+public:
+	int getB()
+	{
+		return callB;
+	}
+};
+
+class C
+{
+public:
+	C()
+	{
+		callC = 0;
+	}
+private:
+	int callC;
+	void inc()
+	{
+		callC++;
+	}
+protected:
+	void func(int & a)
+	{
+		a = a * 5;
+		inc();
+	}
+public:
+	int getC()
+	{
+		return callC;
+	}
+};
+
+class D :public A, public B, public C
+{
+	int val;
+public:
+	D()
+	{
+		val = 1;
+	}
+	void update_val(int new_val)
+	{
+		val = new_val;
+		int a = 1;
+		while (a != new_val)
+		{
+			if (!(new_val % 2 == 0 || new_val % 3 == 0 || new_val % 5 == 0))
+			{
+				break;
+			}
+			if (new_val == 0)
+			{
+				break;
+			}
+			else if (new_val == 2)
+			{
+				A::func(a);
+			}
+			else if (new_val == 3)
+			{
+				B::func(a);
+			}
+			else if (new_val == 5)
+			{
+				C::func(a);
+			}
+			else if (new_val == 6)
+			{
+				if (a != new_val)
+				{
+					A::func(a);
+				}
+				if (a != new_val)
+				{
+					B::func(a);
+				}
+			}
+			else if (new_val == 10)
+			{
+				if (a != new_val)
+				{
+					A::func(a);
+				}
+				if (a != new_val)
+				{
+					C::func(a);
+				}
+			}
+			else if (new_val == 15)
+			{
+				if (a != new_val)
+				{
+					B::func(a);
+				}
+				if (a != new_val)
+				{
+					C::func(a);
+				}
+			}
+			else if (new_val % 2 == 0 && new_val % 3 != 0 && new_val % 5 != 0)
+			{
+				A::func(a);
+				continue;
+			}
+			else if (new_val % 3 == 0 && new_val % 2 != 0 && new_val % 5 != 0)
+			{
+				B::func(a);
+				continue;
+			}
+			else if (new_val % 5 == 0 && new_val % 2 != 0 && new_val % 3 != 0)
+			{
+				C::func(a);
+				continue;
+			}
+			else if (new_val % 2 == 0 && new_val % 3 == 0 && new_val % 5 != 0)
+			{
+				if (a != new_val)
+				{
+					A::func(a);
+				}
+				if (a != new_val)
+				{
+					B::func(a);
+				}
+				continue;
+			}
+			else if (new_val % 2 == 0 && new_val % 5 == 0 && new_val % 3 != 0)
+			{
+				if (a != new_val)
+				{
+					A::func(a);
+				}
+				if (a != new_val)
+				{
+					C::func(a);
+				}
+				continue;
+			}
+			else if (new_val % 3 == 0 && new_val % 5 == 0 && new_val % 2 != 0)
+			{
+				if (a != new_val)
+				{
+					B::func(a);
+				}
+				if (a != new_val)
+				{
+					C::func(a);
+				}
+				continue;
+			}
+			if (a != new_val)
+			{
+				A::func(a);
+			}
+			if (a != new_val)
+			{
+				B::func(a);
+			}
+			if (a != new_val)
+			{
+				C::func(a);
+			}
+		}
+	}
+	void check(int);
+};
+
+void D::check(int new_val)
+{
+	update_val(new_val);
+	cout << "Value = " << val << endl << "A's func called " << getA() << " times " << endl << "B's func called " << getB() << " times" << endl << "C's func called " << getC() << " times" << endl;
+}
+
+int main()
+{
+	D d;
+	int new_val;
+	cin >> new_val;
+	d.check(new_val);
+	return 0;
+}

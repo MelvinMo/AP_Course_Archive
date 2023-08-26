@@ -1,0 +1,5 @@
+﻿  Pair.cpp
+  Regression_source code.cpp
+  Generating Code...
+Pair.obj : error LNK2001: unresolved external symbol "public: static int Pair::objectcount" (?objectcount@Pair@@2HA)
+C:\Users\Win10\Desktop\Regression\Debug\Regression.exe : fatal error LNK1120: 1 unresolved externals

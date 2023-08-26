@@ -1,0 +1,3 @@
+﻿  Real Estate Agency.cpp
+c:\users\win10\desktop\real estate agency.cpp(9): warning C4244: '=': conversion from 'double' to '__int64', possible loss of data
+  Real Estate Agency.vcxproj -> C:\Users\Win10\Desktop\Real Estate Agency\Debug\Real Estate Agency.exe
